@@ -1,0 +1,668 @@
+$date
+	Wed Dec 13 13:04:50 2017
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module simplez_tb $end
+$var wire 1 ! tx $end
+$var wire 1 " stop $end
+$var wire 8 # leds [7:0] $end
+$var reg 1 $ clk $end
+$var reg 1 % rstn $end
+$scope module dut $end
+$var wire 1 $ clk $end
+$var wire 8 & leds [7:0] $end
+$var wire 1 ' ram_cs $end
+$var wire 1 % rstn_ini $end
+$var wire 1 ( rx $end
+$var wire 1 " stop $end
+$var wire 1 ) tx_ready $end
+$var wire 1 ! tx $end
+$var wire 1 * tecl_status_cs $end
+$var wire 1 + tecl_data_cs $end
+$var wire 1 , rxrcv $end
+$var wire 8 - rxdata [7:0] $end
+$var wire 1 . ram_inst_cs $end
+$var wire 1 / ram_data_cs $end
+$var wire 1 0 pant_status_cs $end
+$var wire 1 1 pant_data_cs $end
+$var wire 12 2 mem_dout [11:0] $end
+$var wire 1 3 leds_cs $end
+$var wire 1 4 clk_tic $end
+$var wire 12 5 alu_in [11:0] $end
+$var wire 9 6 addr [8:0] $end
+$var wire 4 7 COE [3:0] $end
+$var wire 3 8 CO [2:0] $end
+$var wire 9 9 CD [8:0] $end
+$var reg 1 : a_load $end
+$var reg 1 ; alu_add $end
+$var reg 1 < alu_clr $end
+$var reg 1 = alu_dec $end
+$var reg 1 > alu_op2 $end
+$var reg 12 ? alu_out [11:0] $end
+$var reg 9 @ cp [8:0] $end
+$var reg 1 A cp_inc $end
+$var reg 1 B cp_load $end
+$var reg 1 C cp_sel $end
+$var reg 1 D flag_z $end
+$var reg 1 E halt $end
+$var reg 8 F leds_data [7:0] $end
+$var reg 3 G next_state [2:0] $end
+$var reg 8 H pant_status [7:0] $end
+$var reg 1 I rcv_flag $end
+$var reg 12 J reg_a [11:0] $end
+$var reg 1 K reg_stop $end
+$var reg 12 L ri [11:0] $end
+$var reg 1 M ri_load $end
+$var reg 1 N rstn $end
+$var reg 1 O rw $end
+$var reg 3 P state [2:0] $end
+$var reg 8 Q tecl_data [7:0] $end
+$var reg 8 R tecl_status [7:0] $end
+$var reg 1 S timer_ena $end
+$scope module ROM $end
+$var wire 9 T addr [8:0] $end
+$var wire 1 $ clk $end
+$var wire 1 ' cs $end
+$var wire 12 U data_in [11:0] $end
+$var wire 1 O rw $end
+$var reg 12 V data_out [11:0] $end
+$upscope $end
+$scope module RX0 $end
+$var wire 1 $ clk $end
+$var wire 1 N rstn $end
+$var wire 1 ( rx $end
+$var wire 1 W clk_baud $end
+$var reg 1 X bauden $end
+$var reg 4 Y bitc [3:0] $end
+$var reg 1 Z clear $end
+$var reg 8 [ data [7:0] $end
+$var reg 1 \ load $end
+$var reg 2 ] next_state [1:0] $end
+$var reg 10 ^ raw_data [9:0] $end
+$var reg 1 , rcv $end
+$var reg 1 _ rx_r $end
+$var reg 2 ` state [1:0] $end
+$scope module baudgen0 $end
+$var wire 1 $ clk $end
+$var wire 1 X clk_ena $end
+$var wire 1 N rstn $end
+$var wire 1 W clk_out $end
+$var reg 7 a divcounter [6:0] $end
+$upscope $end
+$upscope $end
+$scope module TIMER0 $end
+$var wire 1 $ clk $end
+$var wire 1 S timer_ena $end
+$var wire 1 4 clk_out $end
+$var reg 5 b divcounter [4:0] $end
+$upscope $end
+$scope module TX0 $end
+$var wire 1 $ clk $end
+$var wire 8 c data [7:0] $end
+$var wire 1 N rstn $end
+$var wire 1 1 start $end
+$var wire 1 d clk_baud $end
+$var reg 1 e baud_en $end
+$var reg 4 f bitc [3:0] $end
+$var reg 8 g data_r [7:0] $end
+$var reg 1 h load $end
+$var reg 2 i next_state [1:0] $end
+$var reg 1 ) ready $end
+$var reg 10 j shifter [9:0] $end
+$var reg 2 k state [1:0] $end
+$var reg 1 ! tx $end
+$scope module BAUD0 $end
+$var wire 1 $ clk $end
+$var wire 1 e clk_ena $end
+$var wire 1 N rstn $end
+$var wire 1 d clk_out $end
+$var reg 7 l divcounter [6:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 l
+bx k
+bx j
+bx i
+0h
+bx g
+bx f
+0e
+0d
+b0 c
+b0 b
+b0 a
+bx `
+x_
+bx ^
+bx ]
+x\
+bx [
+xZ
+bx Y
+xX
+0W
+bx V
+b0 U
+b0 T
+0S
+b0 R
+b0 Q
+b0 P
+1O
+0N
+0M
+b0 L
+0K
+b0 J
+0I
+b0 H
+b0 G
+b0 F
+0E
+0D
+1C
+0B
+0A
+b0 @
+b1 ?
+0>
+0=
+0<
+0;
+0:
+b0 9
+b0 8
+b0 7
+b0 6
+bx 5
+04
+03
+bx 2
+01
+00
+1/
+1.
+bx -
+x,
+0+
+0*
+0)
+z(
+1'
+b0 &
+0%
+0$
+b0 #
+0"
+x!
+$end
+#1
+b1000000011 5
+1)
+b0 i
+0,
+0\
+1Z
+0X
+b0 ]
+b1000000011 2
+b1000000011 V
+b1111111111 j
+b0 f
+b0 k
+z_
+b0 -
+b0 [
+b0 `
+1$
+#2
+1%
+0$
+#3
+b1 G
+1Z
+1N
+b0 Y
+1!
+1$
+#4
+0$
+#5
+0.
+1M
+b10 G
+b1100111 l
+b1100111 a
+b1 P
+1$
+#6
+0$
+#7
+b11 6
+b11 T
+b11 G
+0C
+0M
+b1 8
+b11 9
+b10 7
+b10 P
+b1000000011 L
+1$
+#8
+0$
+#9
+b11111111 ?
+b0 6
+b0 T
+b11111111 5
+b100 G
+1>
+1:
+1C
+b11111111 2
+b11111111 V
+b11 P
+1$
+#10
+0$
+#11
+1A
+b0 G
+0>
+0:
+b11111111 c
+b1 ?
+b1000000011 5
+b100 P
+b11111111 J
+b11111111 U
+b1000000011 2
+b1000000011 V
+1$
+#12
+0$
+#13
+1.
+b1 6
+b1 T
+b1 G
+0A
+b1 @
+b0 P
+1$
+#14
+0$
+#15
+0.
+1M
+b10 G
+b111111011 5
+b1 P
+b111111011 2
+b111111011 V
+1$
+#16
+0$
+#17
+b0 5
+0'
+13
+0/
+0O
+b111111011 6
+b111111011 T
+b0 8
+b111111011 9
+b1 7
+b100 G
+0C
+0M
+b111111011 L
+b10 P
+1$
+#18
+0$
+#19
+b1 6
+b1 T
+1A
+b0 G
+1O
+1C
+b100 P
+b11111111 #
+b11111111 &
+b11111111 F
+1$
+#20
+0$
+#21
+b111111011 5
+1'
+1.
+b10 6
+b10 T
+b1 G
+0A
+b10 @
+b0 P
+1$
+#22
+0$
+#23
+0'
+0.
+1M
+b10 G
+b0 5
+b1 P
+b111000000000 2
+b111000000000 V
+1$
+#24
+0$
+#25
+b111000000000 5
+1'
+03
+1/
+1E
+b10 6
+b10 T
+b111 8
+b0 9
+b1110 7
+b10 G
+1C
+1O
+0M
+b111000000000 L
+b10 P
+1$
+#26
+0$
+#27
+1"
+1K
+1$
+#28
+0$
+#29
+1$
+#30
+0$
+#31
+1$
+#32
+0$
+#33
+1$
+#34
+0$
+#35
+1$
+#36
+0$
+#37
+1$
+#38
+0$
+#39
+1$
+#40
+0$
+#41
+1$
+#42
+0$
+#43
+1$
+#44
+0$
+#45
+1$
+#46
+0$
+#47
+1$
+#48
+0$
+#49
+1$
+#50
+0$
+#51
+1$
+#52
+0$
+#53
+1$
+#54
+0$
+#55
+1$
+#56
+0$
+#57
+1$
+#58
+0$
+#59
+1$
+#60
+0$
+#61
+1$
+#62
+0$
+#63
+1$
+#64
+0$
+#65
+1$
+#66
+0$
+#67
+1$
+#68
+0$
+#69
+1$
+#70
+0$
+#71
+1$
+#72
+0$
+#73
+1$
+#74
+0$
+#75
+1$
+#76
+0$
+#77
+1$
+#78
+0$
+#79
+1$
+#80
+0$
+#81
+1$
+#82
+0$
+#83
+1$
+#84
+0$
+#85
+1$
+#86
+0$
+#87
+1$
+#88
+0$
+#89
+1$
+#90
+0$
+#91
+1$
+#92
+0$
+#93
+1$
+#94
+0$
+#95
+1$
+#96
+0$
+#97
+1$
+#98
+0$
+#99
+1$
+#100
+0$
+#101
+1$
+#102
+0$
+#103
+1$
+#104
+0$
+#105
+1$
+#106
+0$
+#107
+1$
+#108
+0$
+#109
+1$
+#110
+0$
+#111
+1$
+#112
+0$
+#113
+1$
+#114
+0$
+#115
+1$
+#116
+0$
+#117
+1$
+#118
+0$
+#119
+1$
+#120
+0$
+#121
+1$
+#122
+0$
+#123
+1$
+#124
+0$
+#125
+1$
+#126
+0$
+#127
+1$
+#128
+0$
+#129
+1$
+#130
+0$
+#131
+1$
+#132
+0$
+#133
+1$
+#134
+0$
+#135
+1$
+#136
+0$
+#137
+1$
+#138
+0$
+#139
+1$
+#140
+0$
+#141
+1$
+#142
+0$
+#143
+1$
+#144
+0$
+#145
+1$
+#146
+0$
+#147
+1$
+#148
+0$
+#149
+1$
+#150
+0$
+#151
+1$
+#152
+0$
+#153
+1$
+#154
+0$
+#155
+1$
+#156
+0$
+#157
+1$
+#158
+0$
+#159
+1$
+#160
+0$
+#161
+1$
+#162
+0$
